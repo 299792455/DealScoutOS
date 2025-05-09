@@ -9,24 +9,186 @@ export default function Roadmap() {
 
   const roadmapData = {
     fr: [
-      { step: 1, title: "Version actuelle", description: "Scan YouTube + affichage code promo", icon: "🚀", color: "border-blue-500" },
-      { step: 2, title: "Prochaine étape", description: "Ajout de notifications discrètes", icon: "🔔", color: "border-orange-500" },
-      { step: 3, title: "Futur", description: "Support pour d’autres plateformes vidéo (Twitch ?)", icon: "🎯", color: "border-green-500" },
+      {
+        step: 1,
+        title: "Version actuelle (2025)",
+        icon: "🚀",
+        color: "border-blue-500",
+        content: {
+          realised: [
+            "Dev script de base de l'extension",
+            "Dev Popup affichage Promotion commerciale",
+          ],
+          inDev: [
+            "Fine Tuning des patterns de détection",
+            "Rendre l'extension accessible à tous les navigateurs",
+            "Ajout de notification discrète",
+          ],
+          study: [],
+        },
+      },
+      {
+        step: 2,
+        title: "2026 – Prochains développements",
+        icon: "🔔",
+        color: "border-orange-500",
+        content: {
+          realised: [],
+          inDev: [],
+          study: [
+            "Cross Platform ?",
+            "Sauvegarde en local des bons deals ?",
+          ],
+        },
+      },
+      {
+        step: 3,
+        title: "Et après ?",
+        icon: "🎯",
+        color: "border-green-500",
+        content: {
+          realised: [],
+          inDev: [],
+          study: [
+            "Base de données OS ?",
+            "Intégration IA ?",
+          ],
+        },
+      },
     ],
     en: [
-      { step: 1, title: "Current version", description: "YouTube scan + promo code display", icon: "🚀", color: "border-blue-500" },
-      { step: 2, title: "Next", description: "Add subtle notifications", icon: "🔔", color: "border-orange-500" },
-      { step: 3, title: "Future", description: "Support for other video platforms (Twitch?)", icon: "🎯", color: "border-green-500" },
+      {
+        step: 1,
+        title: "Current version (2025)",
+        icon: "🚀",
+        color: "border-blue-500",
+        content: {
+          realised: [
+            "Script Scan YouTube video",
+            "Popup with commercial offer display",
+          ],
+          inDev: [
+            "Detection pattern fine tuning",
+            "Multi-browser compatibility",
+            "Notification system",
+          ],
+          study: [],
+        },
+      },
+      {
+        step: 2,
+        title: "2026 – Upcoming Features",
+        icon: "🔔",
+        color: "border-orange-500",
+        content: {
+          realised: [],
+          inDev: [],
+          study: [
+            "Cross-platform support ?",
+            "Save deals locally ?",
+          ],
+        },
+      },
+      {
+        step: 3,
+        title: "And after?",
+        icon: "🎯",
+        color: "border-green-500",
+        content: {
+          realised: [],
+          inDev: [],
+          study: [
+            "OS Database?",
+            "AI-powered enhancements ?",
+          ],
+        },
+      },
     ],
     es: [
-      { step: 1, title: "Versión actual", description: "Escaneo de YouTube + visualización de códigos promocionales", icon: "🚀", color: "border-blue-500" },
-      { step: 2, title: "Próximo", description: "Añadir notificaciones discretas", icon: "🔔", color: "border-orange-500" },
-      { step: 3, title: "Futuro", description: "Soporte para otras plataformas de vídeo (¿Twitch?)", icon: "🎯", color: "border-green-500" },
+      {
+        step: 1,
+        title: "Versión actual (2025)",
+        icon: "🚀",
+        color: "border-blue-500",
+        content: {
+          realised: [
+            "Desarrollo del script basico de la extension",
+            "Desarrollo del popup de ofertas comerciales",
+          ],
+          inDev: [
+            "Ajustando los modelos de detección",
+            "Compatibilidad con todos los navegadores",
+            "Integración de notificaciones discretas",
+          ],
+          study: [],
+        },
+      },
+      {
+        step: 2,
+        title: "2026 – Próximas funciones",
+        icon: "🔔",
+        color: "border-orange-500",
+        content: {
+          realised: [],
+          inDev: [],
+          study: [
+            "Soporte multiplataforma ?",
+            "Sistema de guardado en local de ofertas ?",
+          ],
+        },
+      },
+      {
+        step: 3,
+        title: "¿Y después?",
+        icon: "🎯",
+        color: "border-green-500",
+        content: {
+          realised: [],
+          inDev: [],
+          study: [
+            "Integración de base de datos ?",
+            "Integración de inteligencia artificial ?",
+          ],
+        },
+      },
     ],
   };
 
   const steps = roadmapData[language];
   const [activeStep, setActiveStep] = useState<number | null>(null);
+
+  const Section = ({
+    title,
+    items,
+    color,
+  }: {
+    title: string;
+    items: string[];
+    color: string;
+  }) =>
+    items.length > 0 && (
+      <div className="mt-4">
+        <h4
+          className={`
+            font-semibold mb-1
+            ${
+              color === "green"
+                ? "text-green-600"
+                : color === "gray"
+                ? "text-gray-600"
+                : "text-black"
+            }
+          `}
+        >
+          {title}
+        </h4>
+        <ul className="list-disc list-inside text-gray-700 space-y-1">
+          {items.map((item, i) => (
+            <li key={i}>{item}</li>
+          ))}
+        </ul>
+      </div>
+    );
 
   return (
     <motion.section
@@ -69,8 +231,43 @@ export default function Roadmap() {
                 </h3>
               </div>
             </div>
+
             {activeStep === step.step && (
-              <p className="mt-3 text-gray-600">{step.description}</p>
+              <div className="mt-4">
+                <Section
+                  title={
+                    language === "fr"
+                      ? "Réalisé"
+                      : language === "en"
+                      ? "Completed"
+                      : "Realizado"
+                  }
+                  items={step.content.realised}
+                  color="green"
+                />
+                <Section
+                  title={
+                    language === "fr"
+                      ? "En développement"
+                      : language === "en"
+                      ? "In development"
+                      : "En desarrollo"
+                  }
+                  items={step.content.inDev}
+                  color="gray"
+                />
+                <Section
+                  title={
+                    language === "fr"
+                      ? "À l’étude"
+                      : language === "en"
+                      ? "In study"
+                      : "En estudio"
+                  }
+                  items={step.content.study}
+                  color="black"
+                />
+              </div>
             )}
           </div>
         ))}

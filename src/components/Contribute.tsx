@@ -22,7 +22,7 @@ export default function Contribute() {
     es: {
       title: "Contribuir",
       description:
-        "¡DealScout es de código abierto! Puedes contribuir a través de GitHub o sugerir mejoras.",
+        "¡DealScout es libro de acceso! Puedes contribuir a través de GitHub o sugerir mejoras.",
       button: "Ver en GitHub",
     },
   };

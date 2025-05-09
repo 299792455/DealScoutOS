@@ -66,24 +66,24 @@ export default function HeroGeometricDealScout() {
   const texts = {
     fr: {
       badge: "Projet OpenSource",
-      title1: "Détecter les bons plans,",
-      title2: "en un seul clic",
+      title1: "Extension",
+      title2: "DealScout OS",
       description:
-        "L'extension Chrome DealScout détecte automatiquement les offres commerciales des vidéos YT Sponsorisées.",
+        "Détection automatique des offres commerciales des vidéos YT Sponsorisées.",
     },
     en: {
       badge: "OpenSource Project",
-      title1: "Spot the best deals",
-      title2: "in just one click",
+      title1: "Extension",
+      title2: "DealScout OS",
       description:
-        "The Chrome extension DealScout automatically detects commercial offers in YT sponsored videos.",
+        "Automatic detection of commercial offers in sponsored YouTube videos",
     },
     es: {
       badge: "Proyecto Libro de Aceso",
-      title1: "Detecta las mejores ofertas",
-      title2: "con un solo clic",
+      title1: "Extensión",
+      title2: "DealScout OS",
       description:
-        "La extensión Chrome DealScout detecta automáticamente las ofertas comerciales en vídeos de YT patrocinados.",
+        "Detección automática de ofertas comerciales en vídeos patrocinados de YouTube.",
     },
   };
 
