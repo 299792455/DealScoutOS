@@ -18,6 +18,7 @@ export default function Roadmap() {
           realised: [
             "Dev script de base de l'extension",
             "Dev Popup affichage Promotion commerciale",
+            "Site Web"
           ],
           inDev: [
             "Fine Tuning des patterns de détection",
@@ -66,6 +67,7 @@ export default function Roadmap() {
           realised: [
             "Script Scan YouTube video",
             "Popup with commercial offer display",
+            "WebSite"
           ],
           inDev: [
             "Detection pattern fine tuning",
@@ -114,6 +116,7 @@ export default function Roadmap() {
           realised: [
             "Desarrollo del script basico de la extension",
             "Desarrollo del popup de ofertas comerciales",
+            "Sitio Web"
           ],
           inDev: [
             "Ajustando los modelos de detección",
@@ -192,13 +195,14 @@ export default function Roadmap() {
 
   return (
     <motion.section
+    id="roadmap" 
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="w-full py-12 bg-gray-50 px-4 flex flex-col items-center"
+      className="w-full py-12  px-4 flex flex-col items-center"
     >
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
+      <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 mb-8 text-center">
         {language === "fr"
           ? "Roadmap"
           : language === "en"

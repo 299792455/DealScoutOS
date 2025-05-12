@@ -31,16 +31,17 @@ export default function Contribute() {
 
   return (
     <motion.section
+    id="contribuer" 
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="w-full py-12 bg-gray-50 px-4 flex flex-col items-center"
+      className="w-full py-12  px-4 flex flex-col items-center"
     >
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4 text-center">
+      <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 text-center">
         {title}
       </h2>
-      <p className="text-lg text-gray-700 max-w-2xl text-center mb-6">
+      <p className="text-lg text-white mb-4 max-w-2xl text-center mb-6">
         {description}
       </p>
       <a

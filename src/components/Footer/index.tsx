@@ -24,7 +24,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="w-full bg-black text-white py-6 flex flex-col items-center text-center">
+    <footer className="w-full bg-black/50 text-white py-6 flex flex-col items-center text-center">
       <p className="mb-2">
         {texts[language].openSource}{" "}
         <a

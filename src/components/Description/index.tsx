@@ -26,16 +26,17 @@ El objetivo es simple: Desarrollar una herramienta para pagar menos, sin vendern
 
   return (
     <motion.section
+    id="apropos" 
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="w-full py-12 flex flex-col items-center px-4 bg-white"
+      className="w-full py-12 flex flex-col items-center px-4 "
     >
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4 text-center">
+      <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 text-center">
         {titles[language]}
       </h2>
-      <p className="text-lg text-center text-gray-700 max-w-3xl whitespace-pre-line">
+      <p className="text-lg text-center text-white mb-4 max-w-3xl whitespace-pre-line">
         {texts[language]}
       </p>
     </motion.section>

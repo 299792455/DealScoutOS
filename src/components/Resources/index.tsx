@@ -52,13 +52,14 @@ export default function Resources() {
 
   return (
     <motion.section
+    id="documentation" 
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="w-full py-12 bg-white px-4 flex flex-col items-center"
+      className="w-full py-12 px-4 flex flex-col items-center"
     >
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
+      <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 mb-8 text-center">
         {title}
       </h2>
 

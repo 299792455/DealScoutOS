@@ -66,9 +66,9 @@ export default function HowItWorks() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="w-full py-16 bg-white flex flex-col items-center px-4"
+      className="w-full py-16  flex flex-col items-center px-4"
     >
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-12 text-center">
+      <h2 className="text-2xl md:text-3xl font-bold text-white  mb-12 text-center">
         {texts[language].sectionTitle}
       </h2>
 
@@ -79,7 +79,7 @@ export default function HowItWorks() {
               {index + 1}
             </div>
             <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
-            <p className="text-gray-600">{step.description}</p>
+            <p className="text-white mb-4">{step.description}</p>
           </div>
         ))}
       </div>

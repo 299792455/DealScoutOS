@@ -69,7 +69,7 @@ export default function Features() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="w-full py-16 bg-gray-50 flex flex-col items-center px-4"
+      className="w-full py-16  flex flex-col items-center px-4"
     >
       <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
         {texts[language].sectionTitle}
