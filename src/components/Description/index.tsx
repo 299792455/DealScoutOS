@@ -13,9 +13,9 @@ export default function Description() {
   };
 
   const texts = {
-    fr: `L'extension DealScout est un projet libre d'accès développé bénévolement par la communauté et totalement gratuit pour tous.
+    fr: `L'extension DealScout est un projet libre d'accès développé bénévolement et totalement gratuit pour tous.
 
-Le but de ce projet est simple : Développer un outil pour payer moins, sans jamais nous vendre.`,
+Le but de ce projet est simple : Développer un outil pour payer moins, sans jamais se vendre.`,
     en: `DealScout is a free and open-source extension built by volunteers for everyone.
 
 The goal is simple: Build a tool to always pay less—without selling ourselves out.`,

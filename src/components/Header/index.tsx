@@ -26,8 +26,8 @@ export default function Header() {
         {/* 💚 Liens d'ancrage vers les sections */}
         <a href="#apropos" className="hover:underline">{t.apropos}</a>
         <a href="#roadmap" className="hover:underline">{t.roadmap}</a>
-        <a href="#documentation" className="hover:underline">{t.documentation}</a>
         <a href="#contribuer" className="hover:underline">{t.contribuer}</a>
+        <a href="#documentation" className="hover:underline">{t.documentation}</a>
       </nav>
     </header>
   );

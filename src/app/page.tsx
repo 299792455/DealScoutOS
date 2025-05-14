@@ -19,13 +19,17 @@ export default function Home() {
     <>
       <Header />
       <Hero />
+      <div className="maxW">
       <Description />
       <WhySection />
       <HowItWorks />
       <Roadmap />
-      <Resources />
-      <Contribute /> 
+      <Contribute />
+      <div className="privacy-resources">
+      <Resources /> 
       <PrivacyPolicy />
+      </div> 
+      </div>
       <Footer />
     </>
   );

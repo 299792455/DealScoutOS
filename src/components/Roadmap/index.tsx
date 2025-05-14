@@ -18,12 +18,12 @@ export default function Roadmap() {
           realised: [
             "Dev script de base de l'extension",
             "Dev Popup affichage Promotion commerciale",
-            "Site Web"
+            "Site Web v1",
           ],
           inDev: [
             "Fine Tuning des patterns de détection",
             "Rendre l'extension accessible à tous les navigateurs",
-            "Ajout de notification discrète",
+            "Notifications personnalisées",
           ],
           study: [],
         },
@@ -67,12 +67,12 @@ export default function Roadmap() {
           realised: [
             "Script Scan YouTube video",
             "Popup with commercial offer display",
-            "WebSite"
+            "WebSite v1"
           ],
           inDev: [
             "Detection pattern fine tuning",
             "Multi-browser compatibility",
-            "Notification system",
+            "Personalized notifications",
           ],
           study: [],
         },
@@ -116,12 +116,12 @@ export default function Roadmap() {
           realised: [
             "Desarrollo del script basico de la extension",
             "Desarrollo del popup de ofertas comerciales",
-            "Sitio Web"
+            "Sitio Web v1"
           ],
           inDev: [
             "Ajustando los modelos de detección",
             "Compatibilidad con todos los navegadores",
-            "Integración de notificaciones discretas",
+            "Notificaciones personalizadas",
           ],
           study: [],
         },

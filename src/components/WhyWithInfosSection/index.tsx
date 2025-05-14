@@ -12,7 +12,7 @@ export default function WhyWithInfosSection() {
 Récupérer le code promo, le % de réduction et le lien de l’offre en un clic, sans subir le bullshit commercial. 
 
 💼 Côté créateur/sponsor :
-Rendre les offres plus visibles/accessibles et améliorer le taux de conversion sans effort supplémentaire.
+Simplifier l'accès aux offres commerciales.
 
 🔒 Conclusion :
 Une extension Chrome gratuite, maline et utile pour tout le monde. Sans aucune collecte de données.`,
@@ -21,7 +21,7 @@ Une extension Chrome gratuite, maline et utile pour tout le monde. Sans aucune c
 Get the promo code, discount %, and deal link in one click—no commercial BS.
 
 💼 For creators/sponsors:
-Make offers more visible and accessible, and improve conversion rates effortlessly.
+Simplify access to their commercial deals.
 
 🔒 For all:
 A free chrome extension, smart, and useful for everyone. With absolutely no data collection.`,
@@ -30,7 +30,7 @@ A free chrome extension, smart, and useful for everyone. With absolutely no data
 Recuperar el código promo, el % de descuento y el enlace de la oferta con un solo clic, sin el rollo comercial.
 
 💼 Para creadores/patrocinadores:
-Hacer las ofertas más visibles y accesibles, y mejorar la tasa de conversión sin esfuerzo adicional..
+Simplificar el acceso a sus ofertas comerciales.
 
 🔒 Conclusión:
 Una extensión Chrome gratuita, inteligente y útil para todos. Sin ninguna recopilación de datos.`,

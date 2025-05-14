@@ -12,11 +12,11 @@ export default function HowItWorks() {
       steps: [
         {
           title: "Regarde une vidéo YouTube",
-          description: "Lance n’importe quelle vidéo sponsorisée sur YouTube comme tu le fais d'habitude.",
+          description: "Lance n’importe quelle vidéo sur YouTube comme tu le fais d'habitude.",
         },
         {
           title: "DealScout détecte l'offre",
-          description: "L’extension scanne la page et extrait en 1 seconde les codes et promos liés.",
+          description: "Si la vidéos est sponsorisée, l’extension extrait en 1 seconde les codes et promos liés.",
         },
         {
           title: "Récupère ton bon plan",
@@ -29,11 +29,11 @@ export default function HowItWorks() {
       steps: [
         {
           title: "Watch a YouTube video",
-          description: "Launch any sponsored YouTube video as you normally would.",
+          description: "Launch any YouTube video as you normally would.",
         },
         {
           title: "DealScout detects the offer",
-          description: "The extension scans the page and extracts all related promo codes in one second.",
+          description: "The extension extracts all related promo codes in one second, if the video is sponsored.",
         },
         {
           title: "Grab your deal",
@@ -46,11 +46,11 @@ export default function HowItWorks() {
       steps: [
         {
           title: "Mira un vídeo de YouTube",
-          description: "Lanza cualquier vídeo patrocinado en YouTube como de costumbre.",
+          description: "Lanza cualquier vídeo en YouTube como de costumbre.",
         },
         {
           title: "DealScout detecta la oferta",
-          description: "La extensión escanea la página y extrae todos los códigos promocionales en un segundo.",
+          description: "Si el video es patrocinado, la extensión extrae todos los códigos promocionales en un segundo.",
         },
         {
           title: "Consigue tu oferta",
