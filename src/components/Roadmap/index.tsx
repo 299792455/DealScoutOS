@@ -195,12 +195,12 @@ export default function Roadmap() {
 
   return (
     <motion.section
-    id="roadmap" 
+      id="roadmap"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="w-full py-12  px-4 flex flex-col items-center"
+      className="w-full py-12 px-4 flex flex-col items-center"
     >
       <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 mb-8 text-center">
         {language === "fr"
@@ -217,7 +217,9 @@ export default function Roadmap() {
             onClick={() =>
               setActiveStep(activeStep === step.step ? null : step.step)
             }
-            className={`cursor-pointer border-2 rounded-xl p-4 shadow-md transition ${step.color} ${
+            className={`cursor-pointer border-2 rounded-xl p-4 shadow-md transition ${
+              step.step === 1 ? "border-green-500" : "border-orange-500"
+            } ${
               activeStep === step.step
                 ? "bg-white"
                 : "bg-gray-100 hover:bg-gray-200"

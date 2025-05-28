@@ -57,9 +57,9 @@ export default function Resources() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="w-full py-12 px-4 flex flex-col items-center"
+      className="w-full  py-12 px-4 flex flex-col items-center"
     >
-      <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 mb-8 text-center">
+      <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 mb-4 text-center">
         {title}
       </h2>
 
@@ -68,7 +68,7 @@ export default function Resources() {
           <li key={index}>
             <a
               href={item.link}
-              className="text-blue-600 hover:underline transition"
+              className="text-orange-500 hover:underline transition"
               target="_blank"
               rel="noopener noreferrer"
             >

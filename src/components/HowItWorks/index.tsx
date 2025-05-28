@@ -75,11 +75,11 @@ export default function HowItWorks() {
       <div className="grid md:grid-cols-3 gap-8 max-w-6xl">
         {texts[language].steps.map((step, index) => (
           <div key={index} className="flex flex-col items-center text-center">
-            <div className="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center mb-4 text-2xl font-bold">
+            <div className="w-16 h-16 bg-white text-black rounded-full flex items-center justify-center mb-4 text-2xl font-bold">
               {index + 1}
             </div>
-            <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
-            <p className="text-white mb-4">{step.description}</p>
+            <h3 className="text-xl text-white font-semibold mb-2">{step.title}</h3>
+            <p className="text-black mb-4">{step.description}</p>
           </div>
         ))}
       </div>

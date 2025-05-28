@@ -32,12 +32,12 @@ export default function PrivacyPolicy() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="w-full py-12  px-4 flex flex-col items-center"
+      className="w-full py-12 h-[236px]  px-4 flex flex-col items-center"
     >
       <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 mb-4 text-center">
         {title}
       </h2>
-      <p className="text-lg text-white mb-4 max-w-2xl text-center">
+      <p className="text-lg text-white mb-4 max-w-2xl  text-center">
         {description}
       </p>
     </motion.section>

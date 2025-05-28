@@ -8,13 +8,13 @@ export default function WhyWithInfosSection() {
 
   const texts = {
     fr: `
-👀 Côté viewer :
+Viewer — 
 Récupérer le code promo, le % de réduction et le lien de l’offre en un clic, sans subir le bullshit commercial. 
 
-💼 Côté créateur/sponsor :
+Sponsor/Createur — 
 Simplifier l'accès aux offres commerciales.
 
-🔒 Conclusion :
+Conclusion — 
 Une extension Chrome gratuite, maline et utile pour tout le monde. Sans aucune collecte de données.`,
     en: `
 👀 For viewers:
