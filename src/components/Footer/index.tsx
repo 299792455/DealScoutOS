@@ -28,7 +28,7 @@ export default function Footer() {
       <p className="mb-2">
         {texts[language].openSource}{" "}
         <a
-          href="https://github.com/ton-repo" // <-- change ce lien par ton vrai GitHub
+          href="https://github.com/repo-a-mettre" 
           target="_blank"
           rel="noopener noreferrer"
           className="underline hover:text-gray-400 transition"

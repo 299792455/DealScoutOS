@@ -3,7 +3,7 @@
 import { useState } from "react";
 import LanguageSelector from "@/components/LanguageSelector";
 import { useLanguage } from "@/context/LanguageContext";
-import { Menu, X } from "lucide-react"; // ou Heroicons si tu préfères
+import { Menu, X } from "lucide-react"; 
 
 export default function Header() {
   const { language } = useLanguage();

@@ -12,11 +12,11 @@ export default function Resources() {
       items: [
         {
           label: "📄 Documentation utilisateur : comment installer et utiliser",
-          link: "#", // Tu mettras le vrai lien plus tard
+          link: "#", //Later 
         },
         {
           label: "🛠️ Documentation développeur : contribution",
-          link: "#", // Lien GitHub ou doc contribution
+          link: "#", //When program's ready
         },
       ],
     },
