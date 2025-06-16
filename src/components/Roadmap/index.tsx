@@ -194,90 +194,91 @@ export default function Roadmap() {
     );
 
   return (
-    <motion.section
-      id="roadmap"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-      viewport={{ once: true }}
-      className="w-full py-12 px-4 flex flex-col items-center"
-    >
-      <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 mb-8 text-center">
-        {language === "fr"
-          ? "Roadmap"
-          : language === "en"
-          ? "Roadmap"
-          : "Hoja de ruta"}
-      </h2>
+   <motion.section
+  id="roadmap"
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+  className="w-full py-12 px-4 flex flex-col items-center"
+>
+  <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8 text-center leading-tight break-words">
+    {language === "fr"
+      ? "Roadmap"
+      : language === "en"
+      ? "Roadmap"
+      : "Hoja de ruta"}
+  </h2>
 
-      <div className="flex flex-col gap-6 max-w-2xl w-full">
-        {steps.map((step) => (
-          <div
-            key={step.step}
-            onClick={() =>
-              setActiveStep(activeStep === step.step ? null : step.step)
-            }
-            className={`cursor-pointer border-2 rounded-xl p-4 shadow-md transition ${
-              step.step === 1 ? "border-green-500" : "border-orange-500"
-            } ${
-              activeStep === step.step
-                ? "bg-white"
-                : "bg-gray-100 hover:bg-gray-200"
-            }`}
-          >
-            <div className="flex items-center gap-4">
-              <div className="text-4xl">{step.icon}</div>
-              <div>
-                <h3 className="text-xl font-semibold">
-                  {language === "fr"
-                    ? `Étape ${step.step} – ${step.title}`
-                    : language === "en"
-                    ? `Step ${step.step} – ${step.title}`
-                    : `Paso ${step.step} – ${step.title}`}
-                </h3>
-              </div>
-            </div>
-
-            {activeStep === step.step && (
-              <div className="mt-4">
-                <Section
-                  title={
-                    language === "fr"
-                      ? "Réalisé"
-                      : language === "en"
-                      ? "Completed"
-                      : "Realizado"
-                  }
-                  items={step.content.realised}
-                  color="green"
-                />
-                <Section
-                  title={
-                    language === "fr"
-                      ? "En développement"
-                      : language === "en"
-                      ? "In development"
-                      : "En desarrollo"
-                  }
-                  items={step.content.inDev}
-                  color="gray"
-                />
-                <Section
-                  title={
-                    language === "fr"
-                      ? "À l’étude"
-                      : language === "en"
-                      ? "In study"
-                      : "En estudio"
-                  }
-                  items={step.content.study}
-                  color="black"
-                />
-              </div>
-            )}
+  <div className="flex flex-col gap-6 max-w-2xl w-full px-2">
+    {steps.map((step) => (
+      <div
+        key={step.step}
+        onClick={() =>
+          setActiveStep(activeStep === step.step ? null : step.step)
+        }
+        className={`cursor-pointer border-2 rounded-xl p-4 sm:p-6 shadow-md transition ${
+          step.step === 1 ? "border-green-500" : "border-orange-500"
+        } ${
+          activeStep === step.step
+            ? "bg-white"
+            : "bg-gray-100 hover:bg-gray-200"
+        }`}
+      >
+        <div className="flex items-start gap-4">
+          <div className="text-3xl sm:text-4xl">{step.icon}</div>
+          <div className="flex-1">
+            <h3 className="text-lg sm:text-xl font-semibold leading-snug">
+              {language === "fr"
+                ? `Étape ${step.step} – ${step.title}`
+                : language === "en"
+                ? `Step ${step.step} – ${step.title}`
+                : `Paso ${step.step} – ${step.title}`}
+            </h3>
           </div>
-        ))}
+        </div>
+
+        {activeStep === step.step && (
+          <div className="mt-4">
+            <Section
+              title={
+                language === "fr"
+                  ? "Réalisé"
+                  : language === "en"
+                  ? "Completed"
+                  : "Realizado"
+              }
+              items={step.content.realised}
+              color="green"
+            />
+            <Section
+              title={
+                language === "fr"
+                  ? "En développement"
+                  : language === "en"
+                  ? "In development"
+                  : "En desarrollo"
+              }
+              items={step.content.inDev}
+              color="gray"
+            />
+            <Section
+              title={
+                language === "fr"
+                  ? "À l’étude"
+                  : language === "en"
+                  ? "In study"
+                  : "En estudio"
+              }
+              items={step.content.study}
+              color="black"
+            />
+          </div>
+        )}
       </div>
-    </motion.section>
+    ))}
+  </div>
+</motion.section>
+
   );
 }

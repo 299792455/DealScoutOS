@@ -62,27 +62,27 @@ export default function HowItWorks() {
 
   return (
     <motion.section
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-      viewport={{ once: true }}
-      className="w-full py-16  flex flex-col items-center px-4"
-    >
-      <h2 className="text-2xl md:text-3xl font-bold text-white  mb-12 text-center">
-        {texts[language].sectionTitle}
-      </h2>
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+  className="w-full py-16 flex flex-col items-center px-4"
+>
+  <h2 className="text-2xl md:text-3xl font-bold text-white mb-12 text-center leading-tight break-words">
+    {texts[language].sectionTitle}
+  </h2>
 
-      <div className="grid md:grid-cols-3 gap-8 max-w-6xl">
-        {texts[language].steps.map((step, index) => (
-          <div key={index} className="flex flex-col items-center text-center">
-            <div className="w-16 h-16 bg-white text-black rounded-full flex items-center justify-center mb-4 text-2xl font-bold">
-              {index + 1}
-            </div>
-            <h3 className="text-xl text-white font-semibold mb-2">{step.title}</h3>
-            <p className="text-black mb-4">{step.description}</p>
-          </div>
-        ))}
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl w-full px-2">
+    {texts[language].steps.map((step, index) => (
+      <div key={index} className="flex flex-col items-center text-center max-w-sm mx-auto px-2">
+        <div className="w-16 h-16 bg-white text-black rounded-full flex items-center justify-center mb-4 text-2xl font-bold">
+          {index + 1}
+        </div>
+        <h3 className="text-xl text-white font-semibold mb-2 leading-snug">{step.title}</h3>
+        <p className="text-black leading-relaxed text-sm sm:text-base">{step.description}</p>
       </div>
-    </motion.section>
+    ))}
+  </div>
+</motion.section>
   );
 }

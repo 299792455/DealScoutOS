@@ -124,7 +124,7 @@ export default function HeroGeometricDealScout() {
         <DiscountShape value="-50%" delay={1.5} x="right-[25%]" y="bottom-[25%]" color="from-sky-400" />
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 text-center">
+           <div className="relative z-10 container mx-auto px-4 text-center">
         <motion.div
           custom={0}
           variants={fadeUpVariants}
@@ -137,12 +137,11 @@ export default function HeroGeometricDealScout() {
         </motion.div>
 
         <motion.div custom={1} variants={fadeUpVariants} initial="hidden" animate="visible">
-          <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-6 tracking-tight">
-            <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/80">
+          <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-6 tracking-tight leading-tight break-words">
+            <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/80 block">
               {title1}
             </span>
-            <br />
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-white/90 to-rose-400">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-white/90 to-rose-400 block">
               {title2}
             </span>
           </h1>
@@ -154,7 +153,6 @@ export default function HeroGeometricDealScout() {
           </p>
         </motion.div>
 
-        {/* AJOUT du bouton CTA */}
         <motion.div custom={3} variants={fadeUpVariants} initial="hidden" animate="visible">
           <Link
             href="https://chrome.google.com/webstore/detail/your-extension-id"
@@ -165,6 +163,7 @@ export default function HeroGeometricDealScout() {
           </Link>
         </motion.div>
       </div>
+
     </div>
   );
 }
