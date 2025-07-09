@@ -1,0 +1,17 @@
+{
+  "name": "DealScout",
+  "short_name": "DealScout",
+  "description": "Détecte les offres commerciales dans les vidéos YouTube sponsorisées.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#030312",
+  "theme_color": "#5e52d3",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "lang": "fr"
+}
