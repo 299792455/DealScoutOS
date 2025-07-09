@@ -5,7 +5,8 @@ import { Circle } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useLanguage } from "@/context/LanguageContext";
 import DiscountShape from "@/components/DiscountShape";
-import Link from "next/link";
+import { useState } from "react";
+//import Link from "next/link";
 
 function ElegantShape({
   className,
@@ -63,6 +64,7 @@ function ElegantShape({
 
 export default function HeroGeometricDealScout() {
   const { language } = useLanguage();
+  const [showPopup, setShowPopup] = useState(false);
 
   const texts = {
     fr: {
@@ -153,15 +155,23 @@ export default function HeroGeometricDealScout() {
           </p>
         </motion.div>
 
-        <motion.div custom={3} variants={fadeUpVariants} initial="hidden" animate="visible">
-          <Link
-            href="https://chrome.google.com/webstore/detail/your-extension-id"
-            target="_blank"
-            className="inline-block px-6 py-3 bg-indigo-500 hover:bg-indigo-600 text-white font-medium rounded-full"
-          >
-            {cta}
-          </Link>
-        </motion.div>
+        <motion.div custom={3} variants={fadeUpVariants} initial="hidden" animate="visible" className="relative inline-block">
+  <button
+    onClick={() => setShowPopup(true)}
+    className="inline-block px-6 py-3 bg-gray-500 text-white font-medium rounded-full cursor-not-allowed opacity-60"
+  >
+    {cta}
+  </button>
+
+  {showPopup && (
+    <div className="absolute left-1/2 -translate-x-1/2 mt-3 bg-white text-gray-800 text-sm px-4 py-2 rounded shadow-lg z-50 whitespace-nowrap animate-fade-in">
+      {language === 'fr' && "L'extension va revenir encore plus performante !"}
+      {language === 'en' && "The extension will be back even more powerful!"}
+      {language === 'es' && "¡La extensión volverá aún más potente!"}
+    </div>
+  )}
+</motion.div>
+
       </div>
 
     </div>
