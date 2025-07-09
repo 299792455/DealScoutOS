@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { useLanguage } from "@/context/LanguageContext";
 import DiscountShape from "@/components/DiscountShape";
 import { useState } from "react";
+import CarouselMessage from "@/components/CarouselMessage";
 //import Link from "next/link";
 
 function ElegantShape({
@@ -110,7 +111,10 @@ export default function HeroGeometricDealScout() {
 
   return (
     <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute top-0 left-0 w-full z-20">
+  <CarouselMessage />
+</div>
+      <div className="absolute inset-0 overflow-hidden hidden sm:block">
         <DiscountShape value="-10%" delay={0.3} x="left-[10%]" y="top-[15%]" color="from-indigo-400" />
         <DiscountShape value="-20%" delay={0.5} x="right-[15%]" y="top-[30%]" color="from-indigo-400" />
         <DiscountShape value="-30%" delay={0.4} x="left-[5%]" y="bottom-[10%]" color="from-yellow-400" />

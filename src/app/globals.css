@@ -30,6 +30,8 @@ body {
   font-family: Arial, sans-serif;
 }
 
+html { scroll-behavior: smooth; }
+
 .privacy-resources {
   display: flex;
   align-items: center;
