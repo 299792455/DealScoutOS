@@ -7,21 +7,18 @@ export default function Description() {
   const { language } = useLanguage();
 
   const titles = {
-    fr: "Projet OpenSource DealScout",
-    en: "DealScout Open Source Project",
-    es: "Proyecto OpenSource DealScout",
+    fr: "Projet DealScout",
+    en: "DealScout Project",
+    es: "Proyecto DealScout",
   };
 
   const texts = {
-    fr: `L'extension DealScout est un projet libre d'accès développé bénévolement et totalement gratuit pour tous.
-
-Le but de ce projet est simple : Développer un outil discret pour ne jamais manquer une bonne affaire.`,
-    en: `DealScout is a free and open-source extension built by volunteers for everyone.
-
-The goal is simple: Build a tool to never miss a good deal.`,
-    es: `DealScout es una extensión totalmente gratuita y libro de acceso, desarrollada por voluntarios para todos.
-
-El objetivo es simple: Desarrollar una herramienta para no perder nunca una buena oferta.`,
+    fr: `L'extension DealScout est un projet développé bénévolement et totalement gratuit. 
+    Le but de ce projet est simple : Développer un outil discret pour ne jamais manquer une bonne affaire.`,
+    en: `DealScout is a completely free and volunteer-driven project built for everyone.
+The goal is simple: to create a discreet tool that ensures you never miss a great deal.`,
+    es: `DealScout es una extensión totalmente gratuita, desarrollada de forma voluntaria.
+El objetivo es simple: crear una herramienta discreta para no perder nunca una buena oferta.`,
   };
 
   return (

@@ -76,17 +76,17 @@ export default function HeroGeometricDealScout() {
       cta: "Télécharger l'extension Chrome",
     },
     en: {
-      badge: "OpenSource Project",
+      badge: "Volunteer-based project",
       title1: "Extension",
-      title2: "DealScout OS",
+      title2: "DealScout",
       description:
         "Automatic detection of commercial offers in sponsored YouTube videos",
       cta: "Download the Chrome extension",
     },
     es: {
-      badge: "Proyecto Libro de Aceso",
+      badge: "Proyecto voluntario",
       title1: "Extensión",
-      title2: "DealScout OS",
+      title2: "DealScout",
       description:
         "Detección automática de ofertas comerciales en vídeos patrocinados de YouTube.",
       cta: "Descargar la extensión de Chrome",

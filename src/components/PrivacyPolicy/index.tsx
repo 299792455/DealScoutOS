@@ -10,7 +10,7 @@ export default function PrivacyPolicy() {
     fr: {
       title: "Vie privée",
       description:
-        "DealScout ne collecte aucune donnée personnelle. L’analyse est effectuée localement sur la page YouTube visitée.",
+        "DealScout ne collecte aucune donnée personnelle et l'analyse est effectuée localement sur la page YouTube visitée.",
     },
     en: {
       title: "Privacy Policy",

@@ -7,17 +7,17 @@ export default function Footer() {
 
   const texts = {
     fr: {
-      openSource: "🚀 Développé en Open Source –",
+      openSource: "🚀 Développé bénévolement –",
       viewOnGitHub: "Voir sur GitHub",
       copyright: "Tous droits réservés.",
     },
     en: {
-      openSource: "🚀 Developed Open Source –",
+      openSource: "🚀 Volunteer-based project –",
       viewOnGitHub: "View on GitHub",
       copyright: "All rights reserved.",
     },
     es: {
-      openSource: "🚀 Desarrollado en Open Source –",
+      openSource: "🚀 Desarrollado de forma voluntaria –",
       viewOnGitHub: "Ver en GitHub",
       copyright: "Todos los derechos reservados.",
     },
@@ -28,7 +28,7 @@ export default function Footer() {
       <p className="mb-2">
         {texts[language].openSource}{" "}
         <a
-          href="https://github.com/repo-a-mettre" 
+          href="https://github.com/299792455" 
           target="_blank"
           rel="noopener noreferrer"
           className="underline hover:text-gray-400 transition"
