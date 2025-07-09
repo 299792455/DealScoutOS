@@ -10,20 +10,20 @@ export default function Contribute() {
     fr: {
       title: "Contribuer",
       description:
-        "DealScout est open source ! Vous pouvez contribuer via GitHub ou suggérer des améliorations.",
-      button: "Voir sur GitHub",
+        "DealScout est un projet bénévole. Vous pouvez contribuer ou suggérer des améliorations via le formulaire ci-dessous.",
+      button: "Contact",
     },
     en: {
       title: "Contribute",
       description:
-        "DealScout is open source! You can contribute via GitHub or suggest improvements.",
-      button: "View on GitHub",
+        "DealScout is a volunteer-driven project. You can contribute or suggest improvements using the form below.",
+      button: "Contact",
     },
     es: {
       title: "Contribuir",
       description:
-        "¡DealScout es libro de acceso! Puedes contribuir a través de GitHub o sugerir mejoras.",
-      button: "Ver en GitHub",
+        "¡DealScout es un proyecto voluntario. Puedes contribuir o sugerir mejoras a través del formulario que aparece a continuación.",
+      button: "Contacto",
     },
   };
 

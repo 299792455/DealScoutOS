@@ -14,10 +14,6 @@ export default function Resources() {
           label: "📄 Documentation utilisateur : comment installer et utiliser",
           link: "#", //Later 
         },
-        {
-          label: "🛠️ Documentation développeur : contribution",
-          link: "#", //When program's ready
-        },
       ],
     },
     en: {
@@ -27,10 +23,7 @@ export default function Resources() {
           label: "📄 User documentation: how to install and use",
           link: "#",
         },
-        {
-          label: "🛠️ Developer documentation: contributing",
-          link: "#",
-        },
+        
       ],
     },
     es: {
@@ -40,10 +33,7 @@ export default function Resources() {
           label: "📄 Documentación de usuario: cómo instalar y usar",
           link: "#",
         },
-        {
-          label: "🛠️ Documentación para desarrolladores: contribuir",
-          link: "#",
-        },
+       
       ],
     },
   };

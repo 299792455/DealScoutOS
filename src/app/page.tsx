@@ -11,6 +11,7 @@ import Roadmap from "@/components/Roadmap";
 import Resources from "@/components/Resources";
 import Contribute from "@/components/Contribute";
 import PrivacyPolicy from "@/components/PrivacyPolicy";
+import CarouselMessage from "@/components/CarouselMessage";
 
 
 
@@ -18,8 +19,11 @@ export default function Home() {
   return (
     <>
       <Header />
+      <CarouselMessage />
       <Hero />
+      
       <div className="maxW">
+      
       <Description />
       <WhySection />
       <HowItWorks />

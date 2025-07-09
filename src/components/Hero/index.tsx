@@ -66,9 +66,9 @@ export default function HeroGeometricDealScout() {
 
   const texts = {
     fr: {
-      badge: "Projet OpenSource",
+      badge: "Projet bénévole",
       title1: "Extension",
-      title2: "DealScout OS",
+      title2: "DealScout",
       description:
         "Détection automatique des offres commerciales des vidéos YT Sponsorisées.",
       cta: "Télécharger l'extension Chrome",
