@@ -19,7 +19,7 @@ export default function Header() {
 
   return (
     <header className="w-full bg-black/50 text-white shadow-md sticky top-0 z-50 px-4 py-3">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <div className="w-full mx-auto flex items-center justify-between px-4">
         <LanguageSelector />
 
         {/* Bouton burger visible uniquement en mobile */}

@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef} from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 
 const itemsByLang: { [key: string]: string[] } = {
@@ -37,7 +37,6 @@ const itemsByLang: { [key: string]: string[] } = {
 
 export default function CarouselBrand() {
   const trackRef = useRef<HTMLDivElement>(null);
-  const [scrolled, setScrolled] = useState(false);
   const { language } = useLanguage();
 
   useEffect(() => {
@@ -71,13 +70,7 @@ export default function CarouselBrand() {
     animate();
   }, [language]); 
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+
 
   return (
     <div className="left-0 w-full z-40 overflow-hidden py-4">
