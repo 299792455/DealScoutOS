@@ -11,6 +11,7 @@ import Roadmap from "@/components/Roadmap";
 import Resources from "@/components/Resources";
 import Contribute from "@/components/Contribute";
 import PrivacyPolicy from "@/components/PrivacyPolicy";
+import MessageOfTheDay from "@/components/MessageOfTheDay";
 
 
 
@@ -20,6 +21,7 @@ export default function Home() {
     <>
       <Header />
       <Hero />
+      <MessageOfTheDay />
       <div className="maxW">
       <Description />
       <WhySection />
