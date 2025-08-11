@@ -7,47 +7,47 @@ export default function MessageOfTheDay() {
   const { language } = useLanguage();
 
   const titles = {
-    fr: "Update au 31/07",
-    en: "Update 07-31",
-    es: "Update del 31/07",
+    fr: "Update au 11/08",
+    en: "Update 08-11",
+    es: "Update del 11/08",
   };
 
   const texts = {
-  fr: `Le développement avance !
+  fr: `Extension publié!
 
 • Taux de faux positifs inférieur à 10%.
-• Version ENG dispo (ESP toujours en cours...).
+• Version ENG dispo (mais incomplete).
 • Nouvelle classification : Offre valide / expirée / absente.
 • Les offres > 21j sont marquées expirées, mais codes toujours accessibles.
 • Navigation YouTube (SPA) entièrement prise en charge.
 
-Je vise une republication d'ici 72h. Un dernier bug de refresh est encore en cours.
+Un dernier bug de refresh est encore en cours (Rafraichir le navigateur pour les offres expirées).
 
-Merci pour votre patience. o7`,
+Merci pour vos retours. o7`,
 
-  en: `Development is moving forward!
+  en: `Extension published!
 
 • False positive rate is now below 10%.
-• ENG version is available (ESP still in progress...).
+• ENG version is available (still incomplete though).
 • New classification: Valid / Expired / Missing.
 • Deals older than 21 days are marked as expired, but codes remain accessible.
 • Full YouTube (SPA) navigation supported.
 
-Targeting a new release within ~72h. One last refresh bug still being fixed.
+One last refresh bug still being fixed (U'll need to refresh navigator for Expired deals's state).
 
-Thanks for your patience. o7`,
+Thanks for your feedbacks. o7`,
 
-  es: `¡El desarrollo sigue avanzando!
+  es: `¡Extension publicada!
 
 • Menos del 10% de falsos positivos actualmente.
-• Versión ENG disponible (ESP aún en desarrollo...).
+• Versión ENG disponible (aun incompleta).
 • Nueva clasificación: Oferta válida / expirada / ausente.
 • Las ofertas con más de 21 días se marcan como expiradas, pero los códigos siguen accesibles.
 • Soporte completo para la navegación YouTube (SPA).
 
-Se prevé una nueva versión en ~72h. Último bug de refresco todavía en revisión.
+Último bug de refresco todavía en revisión (Tendrás que refrescar el navegador para las ofertas expiradas).
 
-Gracias por su paciencia. o7`,
+Gracias por su colaboración. o7`,
 };
 
 

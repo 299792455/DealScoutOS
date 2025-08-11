@@ -28,7 +28,7 @@ export default function Footer() {
       <p className="mb-2">
         {texts[language].openSource}{" "}
         <a
-          href="https://github.com/299792455" 
+          href="https://github.com/299792455/dealScootXtension" 
           target="_blank"
           rel="noopener noreferrer"
           className="underline hover:text-gray-400 transition"
