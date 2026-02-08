@@ -1,14 +1,10 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { Circle } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 import DiscountShape from "@/components/DiscountShape";
-//import { useState } from "react";
 import CarouselMessage from "@/components/CarouselMessage";
-//import Link from "next/link";
-
-
 
 export default function HeroGeometricDealScout() {
   const { language } = useLanguage();
@@ -38,19 +34,22 @@ export default function HeroGeometricDealScout() {
         "Detección automática de ofertas comerciales en vídeos patrocinados de YouTube.",
       cta: "Descargar la extensión de Chrome",
     },
-  };
+  } as const;
 
   const { badge, title1, title2, description, cta } = texts[language];
 
-  const fadeUpVariants = {
-    hidden: { opacity: 0, y: 30 },
+  const fadeUpVariants: Variants = {
+    hidden: {
+      opacity: 0,
+      y: 30,
+    },
     visible: (i: number) => ({
       opacity: 1,
       y: 0,
       transition: {
         duration: 1,
         delay: 0.5 + i * 0.2,
-        ease: [0.25, 0.4, 0.25, 1],
+        ease: "easeOut",
       },
     }),
   };
@@ -58,8 +57,9 @@ export default function HeroGeometricDealScout() {
   return (
     <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
       <div className="absolute top-0 left-0 w-full z-20">
-  <CarouselMessage />
-</div>
+        <CarouselMessage />
+      </div>
+
       <div className="absolute inset-0 overflow-hidden hidden sm:block">
         <DiscountShape value="-10%" delay={0.3} x="left-[10%]" y="top-[15%]" color="from-indigo-400" />
         <DiscountShape value="-20%" delay={0.5} x="right-[15%]" y="top-[30%]" color="from-indigo-400" />
@@ -76,7 +76,7 @@ export default function HeroGeometricDealScout() {
         <DiscountShape value="-50%" delay={1.5} x="right-[25%]" y="bottom-[25%]" color="from-sky-400" />
       </div>
 
-           <div className="relative z-10 container mx-auto px-4 text-center">
+      <div className="relative z-10 container mx-auto px-4 text-center">
         <motion.div
           custom={0}
           variants={fadeUpVariants}
@@ -106,25 +106,22 @@ export default function HeroGeometricDealScout() {
         </motion.div>
 
         <motion.div
-  custom={3}
-  variants={fadeUpVariants}
-  initial="hidden"
-  animate="visible"
-  className="relative inline-block"
->
-  <a
-    href="https://github.com/299792455/dealScootXtension"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-block px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-full transition"
-  >
-    {cta}
-  </a>
-</motion.div>
-
-
+          custom={3}
+          variants={fadeUpVariants}
+          initial="hidden"
+          animate="visible"
+          className="relative inline-block"
+        >
+          <a
+            href="https://github.com/299792455/dealScootXtension"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-full transition"
+          >
+            {cta}
+          </a>
+        </motion.div>
       </div>
-
     </div>
   );
 }
