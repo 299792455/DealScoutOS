@@ -228,7 +228,7 @@ export default function Roadmap() {
         <div className="flex items-start gap-4">
           <div className="text-3xl sm:text-4xl">{step.icon}</div>
           <div className="flex-1">
-            <h3 className="text-lg sm:text-xl font-semibold leading-snug">
+            <h3 className="text-lg text-black sm:text-xl font-semibold leading-snug">
               {language === "fr"
                 ? `Étape ${step.step} – ${step.title}`
                 : language === "en"

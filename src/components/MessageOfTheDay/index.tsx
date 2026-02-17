@@ -13,42 +13,52 @@ export default function MessageOfTheDay() {
   };
 
   const texts = {
-  fr: `Extension publié!
+  fr: `Extension temporairement désactivée.
 
-• Taux de faux positifs inférieur à 10%.
-• Version ENG dispo (mais incomplete).
-• Nouvelle classification : Offre valide / expirée / absente.
-• Les offres > 21j sont marquées expirées, mais codes toujours accessibles.
-• Navigation YouTube (SPA) entièrement prise en charge.
+Je travaille actuellement sur une V2 beaucoup plus solide.
 
-Un dernier bug de refresh est encore en cours (Rafraichir le navigateur pour les offres expirées).
+• Nouveau moteur de détection
+• Logique plus stricte (moins de faux positifs)
+• Architecture optimisée
+• Meilleure stabilité sur la navigation YouTube (SPA)
+• Base plus évolutive pour les prochaines fonctionnalités
 
-Merci pour vos retours. o7`,
+DealScout revient bientôt.
+Plus propre. Plus fiable. Plus puissant.
 
-  en: `Extension published!
+Merci pour votre soutien. o7`,
 
-• False positive rate is now below 10%.
-• ENG version is available (still incomplete though).
-• New classification: Valid / Expired / Missing.
-• Deals older than 21 days are marked as expired, but codes remain accessible.
-• Full YouTube (SPA) navigation supported.
+  en: `Extension temporarily disabled.
 
-One last refresh bug still being fixed (U'll need to refresh navigator for Expired deals's state).
+I'm currently rebuilding DealScout from scratch for a much stronger V2.
 
-Thanks for your feedbacks. o7`,
+• New detection engine
+• Stricter logic (fewer false positives)
+• Optimized architecture
+• Better YouTube (SPA) stability
+• More scalable foundation
 
-  es: `¡Extension publicada!
+DealScout will be back soon.
+Cleaner. More reliable. More powerful.
 
-• Menos del 10% de falsos positivos actualmente.
-• Versión ENG disponible (aun incompleta).
-• Nueva clasificación: Oferta válida / expirada / ausente.
-• Las ofertas con más de 21 días se marcan como expiradas, pero los códigos siguen accesibles.
-• Soporte completo para la navegación YouTube (SPA).
+Thanks for your support. o7`,
 
-Último bug de refresco todavía en revisión (Tendrás que refrescar el navegador para las ofertas expiradas).
+  es: `Extensión temporalmente desactivada.
 
-Gracias por su colaboración. o7`,
+Estoy reconstruyendo DealScout desde cero para una V2 mucho más sólida.
+
+• Nuevo motor de detección
+• Lógica más estricta (menos falsos positivos)
+• Arquitectura optimizada
+• Mayor estabilidad en la navegación YouTube (SPA)
+• Base más escalable para futuras funciones
+
+DealScout vuelve pronto.
+Más limpio. Más fiable. Más potente.
+
+Gracias por el apoyo. o7`,
 };
+
 
 
   return (

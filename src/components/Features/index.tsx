@@ -79,15 +79,15 @@ export default function Features() {
         {texts[language].features.map((feature, index) => (
           <div
             key={index}
-            className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center text-center"
+            className="bg-white text-black p-6 rounded-2xl shadow-md flex flex-col items-center text-center"
           >
-            <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+            <h3 className="text-xl !text-black font-semibold mb-2 dark:text-black">{feature.title}</h3>
             <p className="text-gray-600">{feature.description}</p>
           </div>
         ))}
       </div>
 
-      <div className="mt-12 text-gray-700 max-w-2xl text-center">
+      <div className="mt-12 max-w-2xl text-center">
         <p>{texts[language].privacy}</p>
       </div>
     </motion.section>
